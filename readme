@@ -1,0 +1,26 @@
+Emotion Detector project
+========================
+
+Files
+-----
+- `facial_expression_recognizer.py` -> Kivy app code for APK packaging
+- `main.py` -> entry point used by Buildozer
+- `buildozer.spec` -> Android APK build configuration
+
+Build APK on Windows using WSL Ubuntu
+-------------------------------------
+1. Install WSL:
+   `wsl --install -d Ubuntu`
+2. In Ubuntu, open this folder and install tools:
+   `sudo apt update`
+   `sudo apt install -y python3-pip python3-venv git zip unzip openjdk-17-jdk`
+   `pip install --upgrade pip`
+   `pip install buildozer cython`
+3. Build the APK:
+   `buildozer android debug`
+4. Find the generated file in the `bin/` folder.
+
+Important
+---------
+This mobile version is an APK-ready starter with camera preview. For real emotion
+recognition on Android, replace the placeholder with a TensorFlow Lite model.

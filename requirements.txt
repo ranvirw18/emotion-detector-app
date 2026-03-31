@@ -1,0 +1,10 @@
+# Desktop / original experiment dependencies
+opencv-python
+numpy
+Pillow
+fer
+mtcnn
+tensorflow
+
+# Android-ready UI dependency
+kivy>=2.3.0
