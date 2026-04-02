@@ -6,5 +6,8 @@ fer
 mtcnn
 tensorflow
 
+# TFLite support for mobile emotion detection
+tflite-runtime;python_version>="3.7"
+
 # Android-ready UI dependency
 kivy>=2.3.0
